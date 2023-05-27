@@ -4,7 +4,7 @@
 ### Prerequisites ###
 * x64 PC/Mac
 * Mysql
-* php 7.X.X
+* php 7.2.X
 * composer 2.X.X
 * Node.js 14.X.X
 
