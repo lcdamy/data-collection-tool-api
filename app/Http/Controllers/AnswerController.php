@@ -6,6 +6,8 @@ use App\Answer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Storage;
+
 
 class AnswerController extends Controller
 {
@@ -46,10 +48,10 @@ class AnswerController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'json_questions' => 'required',
             'hospital' => 'required',
             'extraction_date' => 'required',
-            'file_number' => 'required'
+            'file_number' => 'required',
+            'start' => 'required'
         ]);
 
         if ($validator->fails()) {
@@ -59,8 +61,11 @@ class AnswerController extends Controller
             ], 400);
         }
 
+        $path = Storage::path('public\questions.json');
+        $json = file_get_contents($path);
+
         $answer = new Answer();
-        $answer->json_questions = json_encode($request->json_questions);
+        $answer->json_questions = $json;
         $answer->hospital = $request->hospital;
         $answer->extraction_date = $request->extraction_date;
         $answer->file_number = $request->file_number;
@@ -70,7 +75,7 @@ class AnswerController extends Controller
             return response()->json([
                 'status' => true,
                 'message' => 'Answer created',
-                'answer' => $answer
+                'answer' => json_decode($json, true)
             ]);
         } else {
             return response()->json([
@@ -90,6 +95,7 @@ class AnswerController extends Controller
     {
         $answer = Answer::findOrFail($id);
         if ($answer) {
+            $answer->json_questions = json_decode($answer->json_questions, true);
             return response()->json([
                 'status' => true,
                 'data' => $answer
@@ -122,7 +128,14 @@ class AnswerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $update = Answer::where('id', $id)->update(['json_questions' => json_encode($request->json_questions)]);
+        $update = Answer::where([
+            ['id', "=", $id],
+            ['status', '!=', 'completed']
+        ])->update([
+            'json_questions' => json_encode($request->json_questions),
+            'status' => $request->state
+        ]);
+
         if ($update) {
             return response()->json([
                 'status' => true,

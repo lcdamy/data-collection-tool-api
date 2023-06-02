@@ -34,7 +34,7 @@ Route::group([
     'middleware' => 'api',
     'namespace' => 'App\Http\Controllers'
 ], function ($router) {
-    Route::post('answer', 'AnswerController@store');
+    Route::post('answer/start', 'AnswerController@store');
     Route::put('answer/{id}', 'AnswerController@update');
     Route::get('answer/{id}', 'AnswerController@show');
 });
