@@ -71,10 +71,12 @@ class AnswerController extends Controller
         $answer->file_number = $request->file_number;
         $answer->status = "started";
 
-        if ($this->user->answers()->save($answer)) {
+        $saved = $this->user->answers()->save($answer);
+        if ($saved) {
             return response()->json([
                 'status' => true,
                 'message' => 'Answer created',
+                'answer_id' => $saved->id,
                 'answer' => json_decode($json, true)
             ]);
         } else {
@@ -139,6 +141,7 @@ class AnswerController extends Controller
         if ($update) {
             return response()->json([
                 'status' => true,
+                'answer_id' => $id,
                 'message' => 'Answer updated'
             ]);
         } else {
