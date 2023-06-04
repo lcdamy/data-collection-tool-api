@@ -24,6 +24,8 @@ Now you can proceed to project installation.
 > php artisan key:generate
 # create all necessary tables by running this command
 > php artisan migrate:fresh
+# run the seeds by running this follow command
+> php artisan db:seed --class=HospitalsSeeder
 # if all is okay, Now you can run your server.
 # Run the server
 > php artisan serve

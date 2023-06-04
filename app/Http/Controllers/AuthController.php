@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use App\User;
+use App\Hospital;
 
 /**
  * @group User
@@ -43,8 +44,20 @@ class AuthController extends Controller
     if ($validator->fails()) {
       return response()->json($validator->errors(), 422);
     }
-    $user = User::create(array_merge($validator->validated(),['password' => bcrypt($request->password)]));
-    return response()->json(['message' => 'User created successfully', 'user' => $user]);
+
+    $hospital = Hospital::where('id', $request->hospital_id)->first();
+    if ($hospital) {
+      $user = User::create(array_merge($validator->validated(), ['password' => bcrypt($request->password)]));
+      return response()->json([
+        'message' => 'User created successfully',
+        'user' => $user
+      ]);
+    } else {
+      return response()->json([
+        'status' => false,
+        'message' => 'Oops, we can find the hospital you have selected.'
+      ]);
+    }
   }
 
   public function login(Request $request)
@@ -92,7 +105,7 @@ class AuthController extends Controller
       'token' => $token,
       'token_type' => 'bearer',
       'token_validity' => $this->guard()->factory()->getTTL() * 60,
-      'authenticated_user'=>$this->guard()->user()
+      'authenticated_user' => $this->guard()->user()
     ]);
   }
 }

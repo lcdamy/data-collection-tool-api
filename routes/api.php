@@ -37,4 +37,6 @@ Route::group([
     Route::post('answer/start', 'AnswerController@store');
     Route::put('answer/{id}', 'AnswerController@update');
     Route::get('answer/{id}', 'AnswerController@show');
+    Route::get('answer', 'AnswerController@index');
+    Route::post('hospital', 'HospitalController@store');
 });
