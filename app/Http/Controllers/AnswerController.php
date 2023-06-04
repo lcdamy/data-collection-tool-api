@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Answer;
+use App\Hospital;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -23,10 +24,51 @@ class AnswerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function getAllAnswersAgent($user_id)
     {
-        $answers = $this->user->answers()->get(['json_questions', 'hospital', 'extraction_date', 'file_number', 'status', 'created_by']);
-        return response()->json($answers->toArray());
+        if (intval($user_id) == $this->user->id) { //get answers by a logged in user
+            $answers = $this->user->answers()->get(['json_questions', 'hospital_id', 'extraction_date', 'file_number', 'status', 'created_by']);
+            for ($i = 0; $i < sizeof($answers); $i++) {
+                $answers[$i]->json_questions =  json_decode($answers[$i]->json_questions, true);
+            }
+            return response()->json([
+                "status" => "successful",
+                "answers" => $answers
+            ]);
+        } else {
+            return response()->json([
+                "status" => "failed",
+                "message" => "No answers associated with the user who is logged in",
+                "answers" => []
+            ]);
+        }
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getAllAnswersAdmin(Request $request, $admin_id)
+    {
+        $filters = [];
+        if ($request->hospital_id) {
+            array_push($filters, ['hospital_id', '=', $request->hospital_id]);
+        }
+        if ($request->extraction_date) {
+            array_push($filters, ['extraction_date', '=', $request->extraction_date]);
+        }
+
+        if (intval($admin_id) == $this->user->id) {
+            $answers = Answer::where($filters)->get();
+            for ($i = 0; $i < sizeof($answers); $i++) {
+                $answers[$i]->json_questions =  json_decode($answers[$i]->json_questions, true);
+            }
+            return response()->json([
+                "status" => "success",
+                "answers" => $answers
+            ]);
+        }
     }
 
     /**
@@ -48,7 +90,7 @@ class AnswerController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'hospital' => 'required',
+            'hospital_id' => 'required',
             'extraction_date' => 'required',
             'file_number' => 'required',
             'start' => 'required'
@@ -56,33 +98,39 @@ class AnswerController extends Controller
 
         if ($validator->fails()) {
             return response()->json([
-                'status' => false,
+                'status' => "failed",
                 'errors' => $validator->errors()
             ], 400);
         }
+        $hospital = Hospital::where('id', $request->hospital_id)->first();
+        if ($hospital) {
+            $path = Storage::path('public\questions.json');
+            $json = file_get_contents($path);
+            $answer = new Answer();
+            $answer->json_questions = $json;
+            $answer->hospital_id = $request->hospital_id;
+            $answer->extraction_date = $request->extraction_date;
+            $answer->file_number = $request->file_number;
+            $answer->status = "started";
 
-        $path = Storage::path('public\questions.json');
-        $json = file_get_contents($path);
-
-        $answer = new Answer();
-        $answer->json_questions = $json;
-        $answer->hospital = $request->hospital;
-        $answer->extraction_date = $request->extraction_date;
-        $answer->file_number = $request->file_number;
-        $answer->status = "started";
-
-        $saved = $this->user->answers()->save($answer);
-        if ($saved) {
-            return response()->json([
-                'status' => true,
-                'message' => 'Answer created',
-                'answer_id' => $saved->id,
-                'answer' => json_decode($json, true)
-            ]);
+            $saved = $this->user->answers()->save($answer);
+            if ($saved) {
+                return response()->json([
+                    'status' => "successful",
+                    'message' => 'Answer created',
+                    'answer_id' => $saved->id,
+                    'answer' => json_decode($json, true)
+                ]);
+            } else {
+                return response()->json([
+                    'status' => "failed",
+                    'message' => 'Oops, we can not save the answer'
+                ]);
+            }
         } else {
             return response()->json([
-                'status' => false,
-                'message' => 'Oops, we can not save the answer'
+                'status' => "failed",
+                'message' => 'Oops, we can find the hospital you have selected.'
             ]);
         }
     }
@@ -99,12 +147,12 @@ class AnswerController extends Controller
         if ($answer) {
             $answer->json_questions = json_decode($answer->json_questions, true);
             return response()->json([
-                'status' => true,
+                'status' => "successful",
                 'data' => $answer
             ]);
         } else {
             return response()->json([
-                'status' => false,
+                'status' => "failed",
                 'message' => 'Oops, we can find the answer'
             ]);
         }
@@ -140,13 +188,13 @@ class AnswerController extends Controller
 
         if ($update) {
             return response()->json([
-                'status' => true,
-                'answer_id' => $id,
+                'status' => "successful",
+                'answer_id' => intval($id),
                 'message' => 'Answer updated'
             ]);
         } else {
             return response()->json([
-                'status' => false,
+                'status' => "failed",
                 'message' => 'Oops, we can not update the answer'
             ]);
         }
@@ -162,12 +210,12 @@ class AnswerController extends Controller
     {
         if ($answer->delete()) {
             return response()->json([
-                'status' => true,
+                'status' => "successful",
                 'answer' => $answer
             ]);
         } else {
             return response()->json([
-                'status' => false,
+                'status' => "failed",
                 'message' => 'Oops, we can not delete the answer'
             ], 400);
         }

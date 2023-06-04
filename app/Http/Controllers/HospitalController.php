@@ -15,7 +15,11 @@ class HospitalController extends Controller
      */
     public function index()
     {
-        //
+        $hospitals = Hospital::all();
+        return response()->json([
+            "status" => "successful",
+            "answers" => $hospitals
+        ]);
     }
 
     /**
@@ -43,14 +47,16 @@ class HospitalController extends Controller
 
         if ($validator->fails()) {
             return response()->json([
-                'status' => false,
+                'status' => "failed",
                 'errors' => $validator->errors()
             ], 400);
         }
 
         Hospital::create(array_merge($validator->validated()));
-        return response()->json(['message' => 'Hospital created successfully']);
-
+        return response()->json([
+            'status' => 'successful',
+            'message' => 'Hospital created successfully'
+        ]);
     }
 
     /**

@@ -17,7 +17,7 @@ class CreateAnswersTable extends Migration
             $table->id();
             $table->unsignedBigInteger('created_by');
             $table->json('json_questions');
-            $table->string('hospital');
+            $table->string('hospital_id');
             $table->string('extraction_date');
             $table->string('file_number');
             $table->string('status')->nullable();
