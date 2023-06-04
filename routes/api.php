@@ -36,9 +36,9 @@ Route::group([
 ], function ($router) {
     Route::post('answer/start', 'AnswerController@store');
     Route::put('answer/{id}', 'AnswerController@update');
+    Route::get('answer/admin', 'AnswerController@getAllAnswersAdmin');
     Route::get('answer/{id}', 'AnswerController@show');
     Route::get('answer/agent/{user_id}', 'AnswerController@getAllAnswersAgent');
-    Route::get('answer/admin/{admin_id}', 'AnswerController@getAllAnswersAdmin');
     Route::post('hospital', 'HospitalController@store');
     Route::get('hospital', 'HospitalController@index');
 });

@@ -27,7 +27,7 @@ class AnswerController extends Controller
     public function getAllAnswersAgent($user_id)
     {
         if (intval($user_id) == $this->user->id) { //get answers by a logged in user
-            $answers = $this->user->answers()->get(['json_questions', 'hospital_id', 'extraction_date', 'file_number', 'status', 'created_by']);
+            $answers = $answers = Answer::where([['created_by', '=', $user_id]])->get();
             for ($i = 0; $i < sizeof($answers); $i++) {
                 $answers[$i]->json_questions =  json_decode($answers[$i]->json_questions, true);
             }
@@ -49,7 +49,7 @@ class AnswerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getAllAnswersAdmin(Request $request, $admin_id)
+    public function getAllAnswersAdmin(Request $request)
     {
         $filters = [];
         if ($request->hospital_id) {
@@ -59,16 +59,14 @@ class AnswerController extends Controller
             array_push($filters, ['extraction_date', '=', $request->extraction_date]);
         }
 
-        if (intval($admin_id) == $this->user->id) {
-            $answers = Answer::where($filters)->get();
-            for ($i = 0; $i < sizeof($answers); $i++) {
-                $answers[$i]->json_questions =  json_decode($answers[$i]->json_questions, true);
-            }
-            return response()->json([
-                "status" => "success",
-                "answers" => $answers
-            ]);
+        $answers = Answer::where($filters)->get();
+        for ($i = 0; $i < sizeof($answers); $i++) {
+            $answers[$i]->json_questions =  json_decode($answers[$i]->json_questions, true);
         }
+        return response()->json([
+            "status" => "success",
+            "answers" => $answers
+        ]);
     }
 
     /**
