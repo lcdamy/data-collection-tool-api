@@ -102,7 +102,7 @@ class AnswerController extends Controller
         }
         $hospital = Hospital::where('id', $request->hospital_id)->first();
         if ($hospital) {
-            $path = Storage::path('public\questions.json');
+            $path = Storage::path('public/questions.json');
             $json = file_get_contents($path);
             $answer = new Answer();
             $answer->json_questions = $json;
