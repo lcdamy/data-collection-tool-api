@@ -1,0 +1,4032 @@
+{
+  "parties": [
+      {
+          "part_id": "I",
+          "part_name": "General information",
+          "sub_parties": [
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Date and time of admission",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "date",
+                  "question": "Date of admission",
+                  "answer": "",
+                  "answers": [],
+                  "option": ""
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Date and time of admission",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "time",
+                  "question": "Time of admission",
+                  "answer": "",
+                  "answers": [],
+                  "option": ""
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Medical and obstetrical history",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "text",
+                  "question": "Maternal age in years",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Medical and obstetrical history",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "text",
+                  "question": "Gestational age on admission (in weeks)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Medical and obstetrical history",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "3",
+                  "question_type": "text",
+                  "question": "Gravidity (number of pregnancy(ies) at the moment of admission)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Medical and obstetrical history",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "4",
+                  "question_type": "text",
+                  "question": "Parity (number of delivery(ies) at the moment of admission)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Medical and obstetrical history",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "5",
+                  "question_type": "text",
+                  "question": "Number of living children)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Medical and obstetrical history",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "6",
+                  "question_type": "text",
+                  "question": "Number of previous caesarean section at the moment of admission",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Medical and obstetrical history",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "7",
+                  "question_type": "text",
+                  "question": "Maternal complication(s) during previous pregnancy(ies)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Medical and obstetrical history",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "8",
+                  "question_type": "text",
+                  "question": "Maternal complication(s) during the current pregnancy(ies)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "3",
+                  "sub_part_name": "Diagnosis on admission",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "text",
+                  "question": "Diagnosis on admission",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "3",
+                  "sub_part_name": "Diagnosis on admission",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "radio",
+                  "question": "Mode of Admission",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "status": false,
+                          "name": "Self-Admission"
+                      },
+                      {
+                          "status": false,
+                          "name": "Referred"
+                      }
+                  ],
+                  "option": ""
+              },
+              {
+                  "sub_part_id": "4",
+                  "sub_part_name": "For the referred cases",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "text",
+                  "question": "Which health facility has transferred the patient?",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "4",
+                  "sub_part_name": "For the referred cases",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "text",
+                  "question": "The reason of transfer",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "5",
+                  "sub_part_name": "Vital signs on admission",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "text",
+                  "question": "Pulse (Number of pulsations per minute)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "5",
+                  "sub_part_name": "Vital signs on admission",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "text",
+                  "question": "Blood pressure (systolic and diastolic) ",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "5",
+                  "sub_part_name": "Vital signs on admission",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "3",
+                  "question_type": "text",
+                  "question": "Temperature (Celsius degree)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "5",
+                  "sub_part_name": "Vital signs on admission",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "4",
+                  "question_type": "text",
+                  "question": "Respiratory rate (Number of breaths per minute)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "6",
+                  "sub_part_name": "The characteristics of the Caesarean Section delivery",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "text",
+                  "question": "Gestational age at the moment of delivery (in weeks)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "6",
+                  "sub_part_name": "The characteristics of the Caesarean Section delivery",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "date",
+                  "question": "Date of the delivery",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "6",
+                  "sub_part_name": "The characteristics of the Caesarean Section delivery",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "3",
+                  "question_type": "time",
+                  "question": "The exact time of delivery",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "6",
+                  "sub_part_name": "The characteristics of the Caesarean Section delivery",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "4",
+                  "question_type": "radio",
+                  "question": "Indication of Caesarean Section",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "status": false,
+                          "name": "Umbilical cord prolapse"
+                      },
+                      {
+                          "status": false,
+                          "name": "Abruptio placenta (with living child)"
+                      }, {
+                          "status": false,
+                          "name": "Partial or total placenta previa"
+                      }, {
+                          "status": false,
+                          "name": "Pre-rupture syndrome (Presence of Bandl’s ring)"
+                      }, {
+                          "status": false,
+                          "name": "Uterine Rupture"
+                      }, {
+                          "status": false,
+                          "name": "Eclamptic seizure"
+                      }, {
+                          "status": false,
+                          "name": "Acute fetal distress"
+                      }, {
+                          "status": false,
+                          "name": "Bradycardia: Baseline Fetal Heart Rate: (FHR less than 80 bpm for more than 10minutes), heart rate that does not return to normal"
+                      }, {
+                          "status": false,
+                          "name": "Late deceleration in the Fetal Heart Rate (at the end of contraction FHR less than 80 bpm) repeated for 30 minutes"
+                      },
+                      {
+                          "status": false,
+                          "name": "Dynamic dystocia (cervical dilatation not responding to any treatment)"
+                      },
+                      {
+                          "status": false,
+                          "name": "Fetal presentation abnormalities (Brow)"
+                      },
+                      {
+                          "status": false,
+                          "name": "Fetal presentation abnormalities (Face (mentum posterior))"
+                      }, {
+                          "status": false,
+                          "name": "Fetal presentation abnormalities ( Shoulder or transverse)"
+                      }, {
+                          "status": false,
+                          "name": "Fetal presentation abnormalities (Breech)"
+                      }, {
+                          "status": false,
+                          "name": "Chorioamnionitis ((T* > 39*C, Foulsmelling vaginal discharge, and uterine tenderness outside contractions))"
+                      }, {
+                          "name": "Severe pre-eclampsia (severe proteinuria > 5g/24h and/or persistent high blood pressure, DBP > 110mmHg resistant to antihypertensive therapy. A fortiori with one or more of the following symptoms: persistent headache, blurred vision, epigastric pain, marked hyperreflexia.)",
+                          "answer": false
+                        }, {
+                          "name": "Fetal Heart rate abnormalities (Fetal tachycardia (Persistent FHR>180 bpm >1 hour after reducing maternal hyperthermia with paracetamol and antibiotics))",
+                          "answer": false
+                        }, {
+                          "name": "Fetal Heart rate abnormalities (Regular and late deceleration of FHR <90 bpm for one hour)",
+                          "answer": false
+                        },
+                        {
+                          "name": "History of 2 or more previous C/S/ Uterine rupture",
+                          "answer": false
+                        },
+                        {
+                          "name": "History of VVF",
+                          "answer": false
+                        },
+                        {
+                          "name": "Active genital herpes",
+                          "answer": false
+                        },
+                        {
+                          "name": "HIV without antiretroviral therapy",
+                          "answer": false
+                        },
+                        {
+                          "name": "Request of the patient",
+                          "answer": false
+                        },
+                        {
+                          "name": "Multiple pregnancy",
+                          "answer": false
+                        },
+                        {
+                          "name": "General condition of the mother (cardio-neuro-pulmonary insufficiency)",
+                          "answer": false
+                        },
+                        {
+                          "name": "Others",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                      
+
+
+                  ],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              },
+              {
+                  "sub_part_id": "6",
+                  "sub_part_name": "The characteristics of the Caesarean Section delivery",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "5",
+                  "question_type": "radio",
+                  "question": "Urgency of the procedure/ intervention",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Very urgent Caesarean Section",
+                          "answer": false
+                        },
+                        {
+                          "name": "Emergency Caesarean Section",
+                          "answer": false
+                        },
+                        {
+                          "name": "Planned Caesarean Section",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]",
+                      "applicable": "[77: not applicable]"
+                  }
+              }
+          ]
+      },
+      {
+          "part_id": "II",
+          "part_name": "Preoperative period",
+          "sub_parties":[
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "radio",
+                  "question": "Has the women had an ultrasound before Caesarean section?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },  {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "text",
+                  "question": "What was the indication of having an ultrasound before Caesarean section?",
+                  "answer": "",
+                  "answers": [ ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },{
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "3",
+                  "question_type": "radio",
+                  "question": "Did an anesthetist conduct a pre-assessment",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "4",
+                  "question_type": "radio",
+                  "question": "Did an informed consent has been obtained and/or confirmed and noted in the file?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },{
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "5",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "radio",
+                  "question": "Has the blood group been determinate?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },{
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "5",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "radio",
+                  "question": "Has a compatibility test been carried out?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },{
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "5",
+                  "sub_sub_part_name": "",
+                  "question_id": "3",
+                  "question_type": "radio",
+                  "question": "Has a complete blood count been carried out?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },{
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "6",
+                  "question_type": "text",
+                  "question": "If the cervical dilatation has been conducted, what was the cervical dilatation?",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },{
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "7",
+                  "question_type": "radio",
+                  "question": "Has the phase of labor been defined",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Latent phase of labor (phase before 4cm of dilatation, where the contractions are irregular and vary in frequency, strength, and length)",
+                          "answer": false
+                        },
+                        {
+                          "name": "Active phase of labor (Cervix has dilated to ≥ 4cm and regular contractions are causing cervix dilatation)",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not in labor",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "8",
+                  "question_type": "radio",
+                  "question": "Has an intravenous access of 16 or 18 G been inserted?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "9",
+                  "question_type": "radio",
+                  "question": "Has Antibiotic prophylaxis been administered 30 min to 60 min before Caesarean section?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "9",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "text",
+                  "question": "If yes, What Antibiotic has been provided",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "9",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "text",
+                  "question": "If yes, what is the dose of the antibiotic that has been administered? (in milligram)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "10",
+                  "question_type": "radio",
+                  "question": "Has parenteral corticoid been administrated in case of GA 24-34 weeks (WHO)",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "11",
+                  "question_type": "radio",
+                  "question": "Has Antiacid prophylaxis been administered before Caesarean section",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "12",
+                  "question_type": "radio",
+                  "question": "Has an urinary catheter been inserted",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "13",
+                  "question_type": "radio",
+                  "question": "Has the vagina been disinfected?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "13",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "radio",
+                  "question": "If yes, which antiseptic has been used?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Aqueous iodine",
+                          "answer": false
+                        },
+                        {
+                          "name": "Aqueous Chlorhexidine",
+                          "answer": false
+                        },
+                        {
+                          "name": "Other",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "14",
+                  "question_type": "radio",
+                  "question": "Was the fetal heart rate been observed before going to the theater?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              }
+          ]
+      },
+      {
+          "part_id": "III",
+          "part_name": "Peri-Operative Period",
+          "sub_parties":[
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "radio",
+                  "question": "What is the qualification of staff who performed the anesthesia",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Anesthesist",
+                          "answer": false
+                        },
+                        {
+                          "name": "Anesthesist-intern",
+                          "answer": false
+                        },
+                        {
+                          "name": "General practicioner",
+                          "answer": false
+                        },
+                        {
+                          "name": "Nurse Anaesthetist",
+                          "answer": false
+                        },
+                        {
+                          "name": "Other",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "radio",
+                  "question": "Which type of anesthesia has been performed",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Regional anesthesia",
+                          "answer": false
+                        },
+                        {
+                          "name": "General anesthesia",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "3",
+                  "question_type": "radio",
+                  "question": "What is the reason of the type of anesthesia?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Regional anesthesia as no contra-indications for regional anesthesia",
+                          "answer": false
+                        },
+                        {
+                          "name": "General anesthesia for severe hypovolemai or cardiovascualr instability",
+                          "answer": false
+                        },
+                        {
+                          "name": "General anesthesia for coagulopathy",
+                          "answer": false
+                        },
+                        {
+                          "name": "General anesthesia for infection at the insertion site, sepsis",
+                          "answer": false
+                        },
+                        {
+                          "name": "General anesthesia because of spinal deformity",
+                          "answer": false
+                        },
+                        {
+                          "name": "General anesthesia because of previous spinal surgery",
+                          "answer": false
+                        },
+                        {
+                          "name": "General anesthesia because of extreme urgency (cord prolapse with bradycardie, uterine rupture, antepartum hemorrhage with hypovolemia)",
+                          "answer": false
+                        },
+                        {
+                          "name": "Other",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "4",
+                  "question_type": "radio",
+                  "question": "Has the vital signs been taken and registered before start of anesthesia",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "text",
+                  "question": "If yes, what is the Pulse (Number of pulsations per minute)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "text",
+                  "question": "If yes, What is the Blood pressure (systolic and diastolic)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "",
+                  "question_id": "3",
+                  "question_type": "text",
+                  "question": "If yes, what is the temperature (Celsius Degree)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "",
+                  "question_id": "4",
+                  "question_type": "text",
+                  "question": "If yes, what is the Respiratory rate (Number of breaths per minute)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "5",
+                  "question_type": "radio",
+                  "question": "Has the anesthesia procedure been noted in the files",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              }, {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "6",
+                  "question_type": "text",
+                  "question": "At what time has the anesthesia administered?",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "7",
+                  "question_type": "text",
+                  "question": "What is the total duration of the anesthesia (HH/MM)?",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "8",
+                  "question_type": "radio",
+                  "question": "Has any complication related to anesthesia occurred",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Anesthesia",
+                  "sub_sub_part_id": "8",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "radio",
+                  "question": "If any complication related to anesthesia has occurred, which complication has been occurred?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Hypotension with or without bradycardia",
+                          "answer": false
+                        },
+                        {
+                          "name": "Aortocaval compression",
+                          "answer": false
+                        },
+                        {
+                          "name": "Total spinal anaesthesia",
+                          "answer": false
+                        },
+                        {
+                          "name": "Regurgitation",
+                          "answer": false
+                        },
+                        {
+                          "name": "Failed intubation or eosophageal intubation",
+                          "answer": false
+                        },
+                        {
+                          "name": "Drug administration errors (type of drug, or dosage",
+                          "answer": false
+                        },
+                        {
+                          "name": "Anaphylactic shock",
+                          "answer": false
+                        },
+                        {
+                          "name": "Cardiovascular arrest",
+                          "answer": false
+                        },
+                        {
+                          "name": "Other",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "1",
+                  "sub_sub_part_name": "Information before skin incision",
+                  "question_id": "1",
+                  "question_type": "radio",
+                  "question": "What is the qualification of staff who performed the C/S?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Gynaecologist",
+                          "answer": false
+                        },
+                        {
+                          "name": "Gynaecologist-intern",
+                          "answer": false
+                        },
+                        {
+                          "name": "General practicioner",
+                          "answer": false
+                        },
+                        {
+                          "name": "Other",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "1",
+                  "sub_sub_part_name": "Information before skin incision",
+                  "question_id": "2",
+                  "question_type": "radio",
+                  "question": "Has a checklist pre-per-post procedure been used",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "1",
+                  "sub_sub_part_name": "Information before skin incision",
+                  "question_id": "2.1",
+                  "question_type": "radio",
+                  "question": "If the checklist pre-per-post procedure has been used, is the checklist been fully filled in?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "1",
+                  "sub_sub_part_name": "Information before skin incision",
+                  "question_id": "3",
+                  "question_type": "radio",
+                  "question": "Has the patient been placed in left lateral tilt position on the theater table?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "1",
+                  "sub_sub_part_name": "Information before skin incision",
+                  "question_id": "4",
+                  "question_type": "radio",
+                  "question": "Is an antiseptic been applied for skin preparation before incision of the skin",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "1",
+                  "sub_sub_part_name": "Information before skin incision",
+                  "question_id": "4.1",
+                  "question_type": "radio",
+                  "question": "If Yes, Which type of antiseptic has been used?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Alcohol-based chlorhexidine",
+                          "answer": false
+                        },
+                        {
+                          "name": "Alcohol-based iodine",
+                          "answer": false
+                        },
+                        {
+                          "name": "Other",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "1",
+                  "sub_sub_part_name": "Information before skin incision",
+                  "question_id": "5",
+                  "question_type": "radio",
+                  "question": "Has the instruments been checked before skin incision",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "1",
+                  "sub_sub_part_name": "Information before skin incision",
+                  "question_id": "6",
+                  "question_type": "radio",
+                  "question": "Has the number of gauzes been checked before skin incision",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "2",
+                  "sub_sub_part_name": "Information after skin incision",
+                  "question_id": "1",
+                  "question_type": "time",
+                  "question": "The exact time of incision of the skin",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "2",
+                  "sub_sub_part_name": "Information after skin incision",
+                  "question_id": "2",
+                  "question_type": "time",
+                  "question": "The exact time of incision of the uterus (hysterotomy)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "2",
+                  "sub_sub_part_name": "Information after skin incision",
+                  "question_id": "3",
+                  "question_type": "time",
+                  "question": "The exact time of amniotomy",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "2",
+                  "sub_sub_part_name": "Information after skin incision",
+                  "question_id": "4",
+                  "question_type": "radio",
+                  "question": "Has a large suction tube been used for blood and amniotic fluid aspiration?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "2",
+                  "sub_sub_part_name": "Information after skin incision",
+                  "question_id": "5",
+                  "question_type": "radio",
+                  "question": "The aspect color of the amniotic fluid has been noted",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "2",
+                  "sub_sub_part_name": "Information after skin incision",
+                  "question_id": "5.1",
+                  "question_type": "radio",
+                  "question": "If yes, what is the color",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Clear",
+                          "answer": false
+                        },
+                        {
+                          "name": "meconium",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "2",
+                  "sub_sub_part_name": "Information after skin incision",
+                  "question_id": "6",
+                  "question_type": "radio",
+                  "question": "The volume of the amniotic fluid has been noted",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                       
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "2",
+                  "sub_sub_part_name": "Information after skin incision",
+                  "question_id": "6.1",
+                  "question_type": "radio",
+                  "question": "If yes, what is the volume",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Normal",
+                          "answer": false
+                        },
+                        {
+                          "name": "Abnormal",
+                          "answer": false
+                        },
+                        {
+                          "name": "O Not registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Applicable",
+                          "answer": false
+                        }
+                       
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "2",
+                  "sub_sub_part_name": "Information after skin incision",
+                  "question_id": "7",
+                  "question_type": "radio",
+                  "question": "The odor of the amniotic fluid has been noted",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                       
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "2",
+                  "sub_sub_part_name": "Information after skin incision",
+                  "question_id": "7.1",
+                  "question_type": "radio",
+                  "question": "If yes, what is the odor",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Odorless",
+                          "answer": false
+                        },
+                        {
+                          "name": "Foul smell",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                       
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "3",
+                  "sub_sub_part_name": "Information about the birth of the newborn",
+                  "question_id": "1",
+                  "question_type": "time",
+                  "question": "Time of the birth of the newborn",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "3",
+                  "sub_sub_part_name": "Information about the birth of the newborn",
+                  "question_id": "2",
+                  "question_type": "radio",
+                  "question": "Has the Apgar score been noted at 1 min?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "3",
+                  "sub_sub_part_name": "Information about the birth of the newborn",
+                  "question_id": "2.1",
+                  "question_type": "radio",
+                  "question": "If yes, what was the Apgar score at 1 min?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "[0-3]",
+                          "answer": false
+                        },
+                        {
+                          "name": "[4-6]",
+                          "answer": false
+                        },
+                        {
+                          "name": "[7-10]",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "3",
+                  "sub_sub_part_name": "Information about the birth of the newborn",
+                  "question_id": "3",
+                  "question_type": "radio",
+                  "question": "Has the Apgar score been noted at 5 min?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "3",
+                  "sub_sub_part_name": "Information about the birth of the newborn",
+                  "question_id": "3.1",
+                  "question_type": "radio",
+                  "question": "If yes, what was the Apgar score at 5min?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "[0-3]",
+                          "answer": false
+                        },
+                        {
+                          "name": "[4-6]",
+                          "answer": false
+                        },
+                        {
+                          "name": "[7-10]",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "3",
+                  "sub_sub_part_name": "Information about the birth of the newborn",
+                  "question_id": "4",
+                  "question_type": "radio",
+                  "question": "Has the Apgar score been noted at 10min?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "3",
+                  "sub_sub_part_name": "Information about the birth of the newborn",
+                  "question_id": "4.1",
+                  "question_type": "radio",
+                  "question": "If yes, what was the Apgar score at 10min?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "[0-3]",
+                          "answer": false
+                        },
+                        {
+                          "name": "[4-6]",
+                          "answer": false
+                        },
+                        {
+                          "name": "[7-10]",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "3",
+                  "sub_sub_part_name": "Information about the birth of the newborn",
+                  "question_id": "5",
+                  "question_type": "radio",
+                  "question": "If Apgar at any point was [0-3], was a pediatrician present?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "3",
+                  "sub_sub_part_name": "Information about the birth of the newborn",
+                  "question_id": "6",
+                  "question_type": "radio",
+                  "question": "Has the newborn baby been resuscitated if at any point it was needed?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                       
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "1",
+                  "question_type": "time",
+                  "question": "The exact END time of the intervention",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "2",
+                  "question_type": "radio",
+                  "question": "Has the instruments been checked ",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "3",
+                  "question_type": "radio",
+                  "question": "Has the number of gauzes been checked",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "4",
+                  "question_type": "radio",
+                  "question": "Has Oxytocin been administered?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "4.1",
+                  "question_type": "radio",
+                  "question": "If yes, when is the Oxytocin been given",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "After fetal birth",
+                          "answer": false
+                        },
+                        {
+                          "name": "After delivery of placenta",
+                          "answer": false
+                        },
+                        {
+                          "name": "After fetal birth and after delivery of placenta",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "4.2",
+                  "question_type": "text",
+                  "question": "If yes, what was the dose given? (in international units (IU))",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "5",
+                  "question_type": "radio",
+                  "question": "Procedure of C/S technic has been noted in the files",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "6",
+                  "question_type": "radio",
+                  "question": "Has a wound dressing been applied after closure of the skin?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "7",
+                  "question_type": "radio",
+                  "question": "Has an estimation of blood loss been done?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "7.1",
+                  "question_type": "radio",
+                  "question": "If yes, what was the estimation of blood loss? (in milliliter)",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "[0-500ml]",
+                          "answer": false
+                        },
+                        {
+                          "name": "[501-1000]",
+                          "answer": false
+                        },
+                        {
+                          "name": "[1001-1500]",
+                          "answer": false
+                        },
+                        {
+                          "name": "More than 1500",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "8",
+                  "question_type": "radio",
+                  "question": "Has any complication during the intervention occurred?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "8.1",
+                  "question_type": "radio",
+                  "question": "If any complication during the intervention occurred, which complication has occurred?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Complication related to the incision (Bladder wound)",
+                          "answer": false
+                        },
+                        {
+                          "name": "Complication related to the incision (Other)",
+                          "answer": false
+                        },
+                        {
+                          "name": "Complication related to baby extraction",
+                          "answer": false
+                        },
+                        {
+                          "name": "Complication related to placenta/placenta extraction",
+                          "answer": false
+                        },
+                        {
+                          "name": "Complication related to the uterus (Uterine tear)",
+                          "answer": false
+                        },
+                        {
+                          "name": "Complication related to the uterus (Rupture of uterine pedicles)",
+                          "answer": false
+                        },
+                        {
+                          "name": "Complication related to the uterus (Abnormal bleeding of the uterine wound after suturing)",
+                          "answer": false
+                        },
+                        {
+                          "name": "Complication related to the uterus (Uterine atony)",
+                          "answer": false
+                        },
+                        {
+                          "name": "Others",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "8.2",
+                  "question_type": "radio",
+                  "question": "If PPH occurred in theatre was the cause registered",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "8.3",
+                  "question_type": "radio",
+                  "question": "If any complication during the intervention occurred, what is the type of management?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Call for a senior immediatley",
+                          "answer": false
+                        },
+                        {
+                          "name": "Lab tests",
+                          "answer": false
+                        },
+                        {
+                          "name": "Administer Blood",
+                          "answer": false
+                        },
+                        {
+                          "name": "Oxygen has been given",
+                          "answer": false
+                        },
+                        {
+                          "name": "Intubation",
+                          "answer": false
+                        },
+                        {
+                          "name": "Hysterectomy has been performed",
+                          "answer": false
+                        },
+                        {
+                          "name": "Drugs and fluids has been given ",
+                          "answer": false
+                        },
+                        {
+                          "name": "Others",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "9",
+                  "question_type": "radio",
+                  "question": "Has the vital signs been taken and registered before discharge theater room",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "9.1",
+                  "question_type": "text",
+                  "question": "If yes, what is the Pulse (Number of pulsations per minute) ",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "9.2",
+                  "question_type": "text",
+                  "question": "If yes, What is the Blood pressure (systolic and diastolic)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "9.3",
+                  "question_type": "text",
+                  "question": "If yes, what is the temperature (Celsius Degree)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "9.4",
+                  "question_type": "text",
+                  "question": "If yes, what is the Respiratory rate (Number of breaths per minute)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "9.5",
+                  "question_type": "text",
+                  "question": "If yes, what is the Oxygen saturation (%)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "10",
+                  "question_type": "radio",
+                  "question": "Has patient regained airway control before discharge theater room?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "11",
+                  "question_type": "radio",
+                  "question": "Has the urine output been observed before going to the recovery room?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "12",
+                  "question_type": "radio",
+                  "question": "Was patient able to communicate before discharge theater room?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "13",
+                  "question_type": "time",
+                  "question": "Time of discharge from theater room to Recovery room",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "14",
+                  "question_type": "radio",
+                  "question": "The status of the women at discharge from theater room",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Alive with normal vital signs",
+                          "answer": false
+                        },
+                        {
+                          "name": "Alive under severe condition",
+                          "answer": false
+                        },
+                        {
+                          "name": "Death",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Procedure/ intervention",
+                  "sub_sub_part_id": "4",
+                  "sub_sub_part_name": "Information after the end of the intervention",
+                  "question_id": "15",
+                  "question_type": "radio",
+                  "question": "The status of the newborn at discharge from theater room",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Alive with normal vital signs",
+                          "answer": false
+                        },
+                        {
+                          "name": "Alive under severe condition",
+                          "answer": false
+                        },
+                        {
+                          "name": "Death",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              }
+          ]
+      },
+      {
+          "part_id": "IV",
+          "part_name": "Post-Operative Period",
+          "sub_parties":[
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "radio",
+                  "question": "Has the vital signs been taken and registered before discharge to the ward",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1.1",
+                  "question_type": "text",
+                  "question": "If yes, what is the Pulse(Number of pulsations per minute)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1.2",
+                  "question_type": "text",
+                  "question": "If yes, What is the Blood pressure (systolic and diastolic)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1.3",
+                  "question_type": "text",
+                  "question": "If yes, what is the temperature (Celsius Degree)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1.4",
+                  "question_type": "text",
+                  "question": "If yes, what is the Respiratory rate (Number of breaths per minute)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1.5",
+                  "question_type": "text",
+                  "question": "If yes, what is the Oxygen saturation (%)",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "radio",
+                  "question": "Blood loss has been observed",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "2.1",
+                  "question_type": "radio",
+                  "question": "If yes, what was the blood loss?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Normal",
+                          "answer": false
+                        },
+                        {
+                          "name": "> 500 ml",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not Registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "3",
+                  "question_type": "radio",
+                  "question": "Abdomen palpation has been conducted and noted in the file (uterine evolution, uterus hardness, etc.,)",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "4",
+                  "question_type": "radio",
+                  "question": "Has the diuresis been measured?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "5",
+                  "question_type": "radio",
+                  "question": "Has appropriate pain medication been administered?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "6",
+                  "question_type": "radio",
+                  "question": "Neurologic signs has been observed",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "1",
+                  "sub_part_name": "Information in Recovery room before discharge",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "7",
+                  "question_type": "radio",
+                  "question": "Patient has been discharged to which service?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Postnatal ward",
+                          "answer": false
+                        },
+                        {
+                          "name": "ICU (intensive care Unit)",
+                          "answer": false
+                        },
+                        {
+                          "name": "Transfer to higher hospital",
+                          "answer": false
+                        },
+                        {
+                          "name": "Other",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "1",
+                  "question_type": "time",
+                  "question": "Time of discharge from recovery room to postnatal ward or ICU or other room",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "2",
+                  "question_type": "radio",
+                  "question": "At what interval were the vital signs been taken in the first 2h following transfer to the ward",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "30 minutes",
+                          "answer": false
+                        },
+                        {
+                          "name": "Every hour",
+                          "answer": false
+                        },
+                        {
+                          "name": "Other",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "3",
+                  "question_type": "radio",
+                  "question": "At what time interval were the vital signs been taken in the following 2h?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "30 minutes",
+                          "answer": false
+                        },
+                        {
+                          "name": "Every hour",
+                          "answer": false
+                        },
+                        {
+                          "name": "Other",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "4",
+                  "question_type": "radio",
+                  "question": "At what time interval were the vital signs been taken in the following 4h?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "30 minutes",
+                          "answer": false
+                        },
+                        {
+                          "name": "Every hour",
+                          "answer": false
+                        },
+                        {
+                          "name": "Every 2 hours",
+                          "answer": false
+                        },
+                        {
+                          "name": "Other",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "5",
+                  "question_type": "radio",
+                  "question": "At what time interval were the vital signs been taken in the following hours up to 24h after surgery?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "30 minutes",
+                          "answer": false
+                        },
+                        {
+                          "name": "Every hour",
+                          "answer": false
+                        },
+                        {
+                          "name": "Every 2 hours",
+                          "answer": false
+                        },
+                        {
+                          "name": "Every 4 hours",
+                          "answer": false
+                        },
+                        {
+                          "name": "Other",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "6",
+                  "question_type": "radio",
+                  "question": "Has the diuresis been measured?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "7.1",
+                  "question_type": "radio",
+                  "question": "Time of the removal of the urinary catheter has been noted",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not applicable",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "8.1",
+                  "question_type": "radio",
+                  "question": "Adequate pain medication has been provided?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "8.2",
+                  "question_type": "text",
+                  "question": "If yes, which pain medication has been provided",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "9",
+                  "question_type": "radio",
+                  "question": "Drinks has been resumed after 6 hours postpartum?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "10",
+                  "question_type": "radio",
+                  "question": "Food intake has been resumed after 12 hours postpartum?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "11",
+                  "question_type": "radio",
+                  "question": "Standard dressing made at theatre has been removed?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "11.1",
+                  "question_type": "time",
+                  "question_type_desc": "If yes, at what time has the standard dressing been removed?",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "12",
+                  "question_type": "radio",
+                  "question": "Thromboprophylaxis medication has been provided",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "12.1",
+                  "question_type": "text",
+                  "question": "If yes, Which type of thromboprophylaxis has been given?",
+                  "answer": "",
+                  "answers": [],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "13",
+                  "question_type": "radio",
+                  "question": "Has hemoglobin or hematocrit been measured before discharge home?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                  "sub_part_id": "2",
+                  "sub_part_name": "Information after discharge recovery room",
+                  "sub_sub_part_id": "",
+                  "sub_sub_part_name": "",
+                  "question_id": "14",
+                  "question_type": "radio",
+                  "question": "Has any complication during the postpartum period occurred to the mother?",
+                  "answer": "",
+                  "answers": [
+                      {
+                          "name": "Yes",
+                          "answer": false
+                        },
+                        {
+                          "name": "No",
+                          "answer": false
+                        },
+                        {
+                          "name": "Not registered",
+                          "answer": false
+                        }
+                  ],
+                  "option": {
+                      "register": "[99: not registered]"
+                  }
+              },
+              {
+                "sub_part_id": "2",
+                "sub_part_name": "Information after discharge recovery room",
+                "sub_sub_part_id": "",
+                "sub_sub_part_name": "",
+                "question_id": "14.1",
+                "question_type": "radio",
+                "question": "If yes, which complication has been occurred",
+                "answer": "",
+                "answers": [
+                  {
+                    "name": "Surgical site infections minor",
+                    "answer": false
+                  },
+                  {
+                    "name": "Surgical site infections severe",
+                    "answer": false
+                  },
+                  {
+                    "name": "Deep wound infection of the abdominal wall",
+                    "answer": false
+                  },
+                  {
+                    "name": "Deep wound infection of the abdominal wall and postoperative abdominal wound rupture (Burst abdomen)",
+                    "answer": false
+                  },
+                  {
+                    "name": "Endometritis",
+                    "answer": false
+                  },
+                  {
+                    "name": "Puerperal sepsis ",
+                    "answer": false
+                  },
+                  {
+                    "name": "Septic shock",
+                    "answer": false
+                  },
+                  {
+                    "name": "Other",
+                    "answer": false
+                  },
+                  {
+                    "name": "PPH > 500 ml",
+                    "answer": false
+                  },
+                  {
+                    "name": "Pre/Eclampsia",
+                    "answer": false
+                  },
+                  {
+                    "name": "Vesico or/and recto vaginal fistula",
+                    "answer": false
+                  },
+                  {
+                    "name": "Thromboembolism",
+                    "answer": false
+                  },
+                  {
+                    "name": "Cardiac failure",
+                    "answer": false
+                  },
+                  {
+                    "name": "Diabetes",
+                    "answer": false
+                  },
+                  {
+                    "name": "Mental disorder uterine wound after suturing",
+                    "answer": false,
+                    "sub_answers": {
+                      "name": "Uterine atony",
+                      "answer": false
+                    }
+                  },
+                  {
+                    "name": "Others",
+                    "answer": false
+                  },
+                  {
+                    "name": "Not Registered",
+                    "answer": false
+                  }
+
+                ],
+                "option": {
+                    "register": "[99: not registered]"
+                }
+            },
+            {
+              "sub_part_id": "2",
+              "sub_part_name": "Information after discharge recovery room",
+              "sub_sub_part_id": "",
+              "sub_sub_part_name": "",
+              "question_id": "14.2",
+              "question_type": "radio",
+              "question": "If severe infection occurred what was the management",
+              "answer": "",
+              "answers": [
+                {
+                  "name": "Dressing only",
+                  "answer": false
+                },
+                {
+                  "name": "Drainage",
+                  "answer": false
+                },
+                {
+                  "name": "Antibiotics",
+                  "answer": false
+                },
+                {
+                  "name": "Laparotomy",
+                  "answer": false
+                },
+                {
+                  "name": "Hysterectomy",
+                  "answer": false
+                },
+                {
+                  "name": "Referred",
+                  "answer": false
+                },
+                {
+                  "name": "Other",
+                  "answer": false
+                },
+                {
+                  "name": "Not Registered",
+                  "answer": false
+                }
+              ],
+              "option": {
+                  "register": "[99: not registered]"
+              }
+          },
+          {
+            "sub_part_id": "2",
+            "sub_part_name": "Information after discharge recovery room",
+            "sub_sub_part_id": "",
+            "sub_sub_part_name": "",
+            "question_id": "14.3",
+            "question_type": "radio",
+            "question": "If PPH occurred what was the management?",
+            "answer": "",
+            "answers": [
+              {
+                "name": "Blood transfusion",
+                "answer": false
+              },
+              {
+                "name": "Uterine revision",
+                "answer": false
+              },
+              {
+                "name": "Medication",
+                "answer": false
+              },
+              {
+                "name": "Laparatomy",
+                "answer": false
+              },
+              {
+                "name": "Hysterectomy",
+                "answer": false
+              },
+              {
+                "name": "Referred",
+                "answer": false
+              },
+              {
+                "name": "Not Registered",
+                "answer": false
+              }
+            ],
+            "option": {
+                "register": "[99: not registered]"
+            }
+        },
+        {
+          "sub_part_id": "2",
+          "sub_part_name": "Information after discharge recovery room",
+          "sub_sub_part_id": "",
+          "sub_sub_part_name": "",
+          "question_id": "14.4",
+          "question_type": "radio",
+          "question": "If thromboembolism occurred what was the management? ",
+          "answer": "",
+          "answers": [
+            {
+              "name": "Referred",
+              "answer": false
+            },
+            {
+              "name": "Not registered",
+              "answer": false
+            }
+          ],
+          "option": {
+              "register": "[99: not registered]"
+          }
+      },
+      {
+        "sub_part_id": "2",
+        "sub_part_name": "Information after discharge recovery room",
+        "sub_sub_part_id": "",
+        "sub_sub_part_name": "",
+        "question_id": "15",
+        "question_type": "radio",
+        "question": "Has any complication during the postpartum period occurred to the newborn",
+        "answer": "",
+        "answers": [
+          {
+            "name": "Yes",
+            "answer": false
+          },
+          {
+            "name": "No",
+            "answer": false
+          },
+          {
+            "name": "Not registered",
+            "answer": false
+          }
+        ],
+        "option": {
+            "register": "[99: not registered]"
+        }
+    },
+    {
+      "sub_part_id": "2",
+      "sub_part_name": "Information after discharge recovery room",
+      "sub_sub_part_id": "",
+      "sub_sub_part_name": "",
+      "question_id": "15.1",
+      "question_type": "radio",
+      "question": "If yes, which complication has been occurred",
+      "answer": "",
+      "answers": [
+        {
+          "name": "Infection",
+          "answer": false
+        },
+        {
+          "name": "Hypotony",
+          "answer": false
+        },
+        {
+          "name": "Palsy",
+          "answer": false
+        },
+        {
+          "name": "Convulsions",
+          "answer": false
+        },
+        {
+          "name": "Cyanosis",
+          "answer": false
+        },
+        {
+          "name": "Cardiac failure",
+          "answer": false
+        },
+        {
+          "name": "Others",
+          "answer": false
+        },
+        {
+          "name": "Not Registered",
+          "answer": false
+        }
+      ],
+      "option": {
+          "register": "[99: not registered]"
+      }
+  },
+    {
+      "sub_part_id": "2",
+      "sub_part_name": "Information after discharge recovery room",
+      "sub_sub_part_id": "",
+      "sub_sub_part_name": "",
+      "question_id": "15.1",
+      "question_type": "radio",
+      "question": "If yes, which complication has been occurred",
+      "answer": "",
+      "answers": [
+        {
+          "name": "Infection",
+          "answer": false
+        },
+        {
+          "name": "Hypotony",
+          "answer": false
+        },
+        {
+          "name": "Palsy",
+          "answer": false
+        },
+        {
+          "name": "Convulsions",
+          "answer": false
+        },
+        {
+          "name": "Cyanosis",
+          "answer": false
+        },
+        {
+          "name": "Cardiac failure",
+          "answer": false
+        },
+        {
+          "name": "Others",
+          "answer": false
+        },
+        {
+          "name": "Not Registered",
+          "answer": false
+        }
+      ],
+      "option": {
+          "register": "[99: not registered]"
+      }
+  }
+          ]
+      },{
+        "part_id": "V",
+        "part_name": "Final Outcome",
+        "sub_parties":[
+          {
+            "sub_part_id": "1",
+            "sub_part_name": "Outcome of the mother",
+            "sub_sub_part_id": "",
+            "sub_sub_part_name": "",
+            "question_id": "1",
+            "question_type": "text",
+            "question": "Final diagnose",
+            "answer": "",
+            "answers": [],
+            "option": {
+                "register": "[99: not registered]"
+            }
+        },
+        {
+          "sub_part_id": "1",
+          "sub_part_name": "Outcome of the mother",
+          "sub_sub_part_id": "",
+          "sub_sub_part_name": "",
+          "question_id": "2",
+          "question_type": "radio",
+          "question": "Outcome of the mother at Discharge",
+          "answer": "",
+          "answers": [
+            {
+              "name": "Alive in good condition",
+              "answer": false
+            },
+            {
+              "name": "Alive with chronic condition",
+              "answer": false
+            },
+            {
+              "name": "Death",
+              "answer": false
+            },
+            {
+              "name": "Transfered",
+              "answer": false
+            },
+            {
+              "name": "Not registered",
+              "answer": false
+            }
+          ],
+          "option": {
+              "register": "[99: not registered]"
+          }
+      },
+      {
+        "sub_part_id": "1",
+        "sub_part_name": "Outcome of the mother",
+        "sub_sub_part_id": "",
+        "sub_sub_part_name": "",
+        "question_id": "3",
+        "question_type": "date",
+        "question": "Date of discharge/death/transfer",
+        "answer": "",
+        "answers": [],
+        "option": {
+            "register": "[99: not registered]"
+        }
+    },
+    {
+      "sub_part_id": "1",
+      "sub_part_name": "Outcome of the mother",
+      "sub_sub_part_id": "",
+      "sub_sub_part_name": "",
+      "question_id": "4",
+      "question_type": "time",
+      "question": "Time of discharge/ death/ transfer",
+      "answer": "",
+      "answers": [],
+      "option": {
+          "register": "[99: not registered]"
+      }
+  },
+  {
+    "sub_part_id": "1",
+    "sub_part_name": "Outcome of the mother",
+    "sub_sub_part_id": "",
+    "sub_sub_part_name": "",
+    "question_id": "5",
+    "question_type": "radio",
+    "question": "Has a Post partum visit 1 done?",
+    "answer": "",
+    "answers": [
+      {
+        "name": "Yes",
+        "answer": false
+      },
+      {
+        "name": "No",
+        "answer": false
+      },
+      {
+        "name": "Not registered",
+        "answer": false
+      }
+    ],
+    "option": {
+        "register": "[99: not registered]"
+    }
+},
+{
+  "sub_part_id": "1",
+  "sub_part_name": "Outcome of the mother",
+  "sub_sub_part_id": "",
+  "sub_sub_part_name": "",
+  "question_id": "6",
+  "question_type": "radio",
+  "question": "Has a Post partum visit 2 planned?",
+  "answer": "",
+  "answers": [
+    {
+      "name": "Yes",
+      "answer": false
+    },
+    {
+      "name": "No",
+      "answer": false
+    },
+    {
+      "name": "Not registered",
+      "answer": false
+    }
+  ],
+  "option": {
+      "register": "[99: not registered]"
+  }
+},
+{
+"sub_part_id": "1",
+"sub_part_name": "Outcome of the mother",
+"sub_sub_part_id": "",
+"sub_sub_part_name": "",
+"question_id": "7",
+"question_type": "radio",
+"question": "Has Post Partum Family planning been made",
+"answer": "",
+"answers": [
+  {
+    "name": "Yes",
+    "answer": false
+  },
+  {
+    "name": "No",
+    "answer": false
+  },
+  {
+    "name": "Not registered",
+    "answer": false
+  }
+],
+"option": {
+    "register": "[99: not registered]"
+}
+},
+{
+"sub_part_id": "2",
+"sub_part_name": "Outcome of the Fetus/Newborn",
+"sub_sub_part_id": "",
+"sub_sub_part_name": "",
+"question_id": "1",
+"question_type": "radio",
+"question": "Foetal heart rate positive on admission",
+"answer": "",
+"answers": [
+  {
+    "name": "Yes",
+    "answer": false
+  },
+  {
+    "name": "No",
+    "answer": false
+  },
+  {
+    "name": "Not registered",
+    "answer": false
+  },
+  {
+    "name": "Not applicable",
+    "answer": false
+  }
+],
+"option": {
+    "register": "[99: not registered]"
+}
+},
+{
+"sub_part_id": "2",
+"sub_part_name": "Outcome of the Fetus/Newborn",
+"sub_sub_part_id": "",
+"sub_sub_part_name": "",
+"question_id": "2",
+"question_type": "radio",
+"question": "Foetal heart rate positive on admission",
+"answer": "",
+"answers": [
+  {
+    "name": "Live birth and live child at discharge and in good condition",
+    "answer": false
+  },
+  {
+    "name": "Live birth and live child at discharge, but with chronic condition",
+    "answer": false
+  },
+  {
+    "name": "Transferred",
+    "answer": false
+  },
+  {
+    "name": "Stillbirth fresh (FHT positive on admission)",
+    "answer": false
+  },
+  {
+    "name": "Stillbirth fresh (FHT negative on admission)",
+    "answer": false
+  },
+  {
+    "name": "Stillborn macerated",
+    "answer": false
+  },
+  {
+    "name": "Neonatal death",
+    "answer": false
+  },
+  {
+    "name": "Not registered",
+    "answer": false
+  },
+  {
+    "name": "Not applicable",
+    "answer": false
+  }
+],
+"option": {
+    "register": "[99: not registered]"
+}
+}
+        ]
+      }
+  ]
+}
