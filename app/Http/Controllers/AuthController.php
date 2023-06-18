@@ -38,26 +38,17 @@ class AuthController extends Controller
       'lastname' => 'required|string',
       'email' => 'required|email|unique:users',
       'password' => 'required|confirmed|min:6',
-      'phone' => 'required|unique:users',
-      'hospital_id' => 'required'
+      'phone' => 'required|unique:users'
     ]);
     if ($validator->fails()) {
       return response()->json($validator->errors(), 422);
     }
 
-    $hospital = Hospital::where('id', $request->hospital_id)->first();
-    if ($hospital) {
-      $user = User::create(array_merge($validator->validated(), ['password' => bcrypt($request->password)]));
-      return response()->json([
-        'message' => 'User created successfully',
-        'user' => $user
-      ]);
-    } else {
-      return response()->json([
-        'status' => false,
-        'message' => 'Oops, we can find the hospital you have selected.'
-      ]);
-    }
+    $user = User::create(array_merge($validator->validated(), ['password' => bcrypt($request->password)]));
+    return response()->json([
+      'message' => 'User created successfully',
+      'user' => $user
+    ]);
   }
 
   public function login(Request $request)

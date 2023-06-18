@@ -24,10 +24,18 @@ class AnswerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getAllAnswersAgent($user_id)
+    public function getAllAnswersAgent($user_id, Request $request)
     {
         if (intval($user_id) == $this->user->id) { //get answers by a logged in user
-            $answers = $answers = Answer::where([['created_by', '=', $user_id]])->get();
+            $filters = [['created_by', '=', $user_id]];
+            if ($request->hospital_id) {
+                array_push($filters, ['hospital_id', '=', $request->hospital_id]);
+            }
+            if ($request->extraction_date) {
+                array_push($filters, ['extraction_date', '=', $request->extraction_date]);
+            }
+            // error_log(json_encode($filters));
+            $answers = $answers = Answer::where($filters)->get();
             for ($i = 0; $i < sizeof($answers); $i++) {
                 $answers[$i]->json_questions =  json_decode($answers[$i]->json_questions, true);
             }
@@ -101,7 +109,8 @@ class AnswerController extends Controller
             ], 400);
         }
         $hospital = Hospital::where('id', $request->hospital_id)->first();
-        if ($hospital) {
+        $answer = Answer::where('file_number', $request->file_number)->first();
+        if ($hospital && !$answer) {
             $path = Storage::path('public/questions.json');
             $json = file_get_contents($path);
             $answer = new Answer();
@@ -128,7 +137,7 @@ class AnswerController extends Controller
         } else {
             return response()->json([
                 'status' => "failed",
-                'message' => 'Oops, we can find the hospital you have selected.'
+                'message' => 'We are enable to find the hospital or the file number already exist.'
             ]);
         }
     }
