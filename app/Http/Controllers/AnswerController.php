@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use App\Answer;
 use App\Hospital;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
+
 
 
 class AnswerController extends Controller
@@ -34,7 +36,6 @@ class AnswerController extends Controller
             if ($request->extraction_date) {
                 array_push($filters, ['extraction_date', '=', $request->extraction_date]);
             }
-            // error_log(json_encode($filters));
             $answers = $answers = Answer::where($filters)->get();
             for ($i = 0; $i < sizeof($answers); $i++) {
                 $answers[$i]->json_questions =  json_decode($answers[$i]->json_questions, true);
@@ -67,7 +68,11 @@ class AnswerController extends Controller
             array_push($filters, ['extraction_date', '=', $request->extraction_date]);
         }
 
-        $answers = Answer::where($filters)->get();
+        $answers = DB::table('answers')
+        ->join('users', 'users.id', '=', 'answers.created_by')
+        ->join('hospitals', 'hospitals.id', '=', 'answers.hospital_id')
+        ->where($filters)
+        ->get();
         for ($i = 0; $i < sizeof($answers); $i++) {
             $answers[$i]->json_questions =  json_decode($answers[$i]->json_questions, true);
         }
