@@ -35,6 +35,7 @@ Route::group([
     'namespace' => 'App\Http\Controllers'
 ], function ($router) {
     Route::post('answer/start', 'AnswerController@store');
+    Route::post('answer/sync', 'AnswerController@create');
     Route::put('answer/{id}', 'AnswerController@update');
     Route::get('answer/admin', 'AnswerController@getAllAnswersAdmin');
     Route::get('answer/{id}', 'AnswerController@show');
