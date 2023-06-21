@@ -69,10 +69,10 @@ class AnswerController extends Controller
         }
 
         $answers = DB::table('answers')
-        ->join('users', 'users.id', '=', 'answers.created_by')
-        ->join('hospitals', 'hospitals.id', '=', 'answers.hospital_id')
-        ->where($filters)
-        ->get();
+            ->join('users', 'users.id', '=', 'answers.created_by')
+            ->join('hospitals', 'hospitals.id', '=', 'answers.hospital_id')
+            ->where($filters)
+            ->get();
         for ($i = 0; $i < sizeof($answers); $i++) {
             $answers[$i]->json_questions =  json_decode($answers[$i]->json_questions, true);
         }
@@ -89,7 +89,47 @@ class AnswerController extends Controller
      */
     public function create(Request $request)
     {
-        //
+        $synced_data = [];
+        for ($i = 0; $i < sizeof($request->data); $i++) {
+            $update = Answer::where([
+                ['file_number', "=", $request->data[$i]['file_number']],
+                ['status', '!=', 'completed']
+            ])->update([
+                'json_questions' => json_encode($request->data[$i]['json_questions']),
+                'status' => $request->data[$i]['status']
+            ]);
+            if ($update==0) {
+                $answer = new Answer();
+                $answer->json_questions = json_encode($request->data[$i]['json_questions']);
+                $answer->hospital_id =  $request->data[$i]['hospital_id'];
+                $answer->extraction_date = $request->data[$i]['extraction_date'];
+                $answer->file_number = $request->data[$i]['file_number'];
+                $answer->mode = "online";
+                $answer->status = $request->data[$i]['status'];
+                $saved = $this->user->answers()->save($answer);
+                array_push($synced_data, $saved->id);
+            } else {
+                 array_push($synced_data, $update);
+            }
+        }
+        if (sizeof($synced_data) == sizeof($request->data)) {
+            return response()->json([
+                'status' => "successful",
+                'message' => 'all answers syncronized successfuly',
+                'answer_ids' => $synced_data
+            ]);
+        } else if (sizeof($synced_data) != 0 && sizeof($synced_data) < sizeof($request->data)) {
+            return response()->json([
+                'status' => "successful",
+                'message' => '[' . sizeof($synced_data) . '] answers syncronized successfuly',
+                'answer_ids' => $synced_data
+            ]);
+        } else {
+            return response()->json([
+                'status' => "failed",
+                'errors' => "we can't syncronize the answers currently"
+            ], 400);
+        }
     }
 
     /**
@@ -100,43 +140,51 @@ class AnswerController extends Controller
      */
     public function store(Request $request)
     {
-        error_log(json_encode($request->data));
-//  for ($i=0; $i < ; $i++) { 
-//     # code...
-//  }
+        $validator = Validator::make($request->all(), [
+            'hospital_id' => 'required',
+            'extraction_date' => 'required',
+            'file_number' => 'required',
+            'start' => 'required'
+        ]);
 
-        // $hospital = Hospital::where('id', $request->hospital_id)->first();
-        // $answer = Answer::where('file_number', $request->file_number)->first();
-        // if ($hospital && !$answer) {
-        //     $path = Storage::path('public/questions.json');
-        //     $json = file_get_contents($path);
-        //     $answer = new Answer();
-        //     $answer->json_questions = $json;
-        //     $answer->hospital_id = $request->hospital_id;
-        //     $answer->extraction_date = $request->extraction_date;
-        //     $answer->file_number = $request->file_number;
-        //     $answer->status = "started";
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => "failed",
+                'errors' => $validator->errors()
+            ], 400);
+        }
+        $hospital = Hospital::where('id', $request->hospital_id)->first();
+        $answer = Answer::where('file_number', $request->file_number)->first();
+        if ($hospital && !$answer) {
+            $path = Storage::path('public/questions.json');
+            $json = file_get_contents($path);
+            $answer = new Answer();
+            $answer->json_questions = $json;
+            $answer->hospital_id = $request->hospital_id;
+            $answer->extraction_date = $request->extraction_date;
+            $answer->file_number = $request->file_number;
+            $answer->status = "started";
 
-        //     $saved = $this->user->answers()->save($answer);
-        //     if ($saved) {
-        //         return response()->json([
-        //             'status' => "successful",
-        //             'message' => 'Answer created',
-        //             'answer_id' => $saved->id,
-        //             'answer' => json_decode($json, true)
-        //         ]);
-        //     } else {
-        //         return response()->json([
-        //             'status' => "failed",
-        //             'message' => 'Oops, we can not save the answer'
-        //         ]);
-        //     }
-        // } else {
-        //     return response()->json([
-        //         'status' => "failed",
-        //         'message' => 'We are enable to find the hospital or the file number already exist.'
-        //     ]);
-        // }
+            $saved = $this->user->answers()->save($answer);
+            if ($saved) {
+                return response()->json([
+                    'status' => "successful",
+                    'message' => 'Answer created',
+                    'answer_id' => $saved->id,
+                    'answer' => json_decode($json, true)
+                ]);
+            } else {
+                return response()->json([
+                    'status' => "failed",
+                    'message' => 'Oops, we can not save the answer'
+                ]);
+            }
+        } else {
+            return response()->json([
+                'status' => "failed",
+                'message' => 'We are enable to find the hospital or the file number already exist.'
+            ]);
+        }
     }
 
     /**
