@@ -98,18 +98,19 @@ class AnswerController extends Controller
                 'json_questions' => json_encode($request->data[$i]['json_questions']),
                 'status' => $request->data[$i]['status']
             ]);
-            if ($update==0) {
+            if ($update == 0) {
                 $answer = new Answer();
                 $answer->json_questions = json_encode($request->data[$i]['json_questions']);
                 $answer->hospital_id =  $request->data[$i]['hospital_id'];
                 $answer->extraction_date = $request->data[$i]['extraction_date'];
                 $answer->file_number = $request->data[$i]['file_number'];
+                $answer->registration_number = $request->data[$i]['registration_number'];
                 $answer->mode = "online";
                 $answer->status = $request->data[$i]['status'];
                 $saved = $this->user->answers()->save($answer);
                 array_push($synced_data, $saved->id);
             } else {
-                 array_push($synced_data, $update);
+                array_push($synced_data, $update);
             }
         }
         if (sizeof($synced_data) == sizeof($request->data)) {
@@ -163,6 +164,7 @@ class AnswerController extends Controller
             $answer->hospital_id = $request->hospital_id;
             $answer->extraction_date = $request->extraction_date;
             $answer->file_number = $request->file_number;
+            $answer->registration_number = $request->registration_number;
             $answer->status = "started";
 
             $saved = $this->user->answers()->save($answer);

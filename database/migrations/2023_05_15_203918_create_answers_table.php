@@ -20,6 +20,7 @@ class CreateAnswersTable extends Migration
             $table->string('hospital_id');
             $table->string('extraction_date');
             $table->string('file_number');
+            $table->string('registration_number');
             $table->string('mode');
             $table->string('status')->nullable();
             $table->foreign('created_by')->references('id')->on('users')->onDelete('cascade');
